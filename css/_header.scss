@@ -1,11 +1,13 @@
 *, *::after, *::before{
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body{
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    background-color: black !important;
 }
 
 ::-webkit-scrollbar {
@@ -26,6 +28,7 @@ body{
             font-size: 15px;
             line-height: 20px;
             margin-left: 20px;
+            
     
             &:hover{
                 color: white;
@@ -34,6 +37,16 @@ body{
         }
     }
 
+    .navbar-toggler{
+        border: none;
+
+        &:focus{
+            outline: none;
+            box-shadow: none;
+        }
+    }
+      
+
     .nav_button{
         width: 155px;
         height: 42px;
@@ -41,6 +54,16 @@ body{
         border: none;
         margin-left: 50px;
         transition-duration: 0.5s;
+
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+        letter-spacing: 0.4000000059604645px;
+
+        @media screen and (max-width: $breakpoint-lg) {
+            margin-left: 0;
+        }
+
 
         &:hover{
             color: white;
@@ -54,6 +77,7 @@ body{
     background-image: url(img/header_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-x: center;
     height: 800px;
     width: 100%;
 
@@ -62,27 +86,41 @@ body{
 
         h1{
             color: white;
-            font-style: normal;
-            font-weight: 400;
-            font-size: 54px;
-            line-height: 59px;
-            text-align: center;
             margin-bottom: 20px;
+
+            font-size: 54px;
+            font-weight: 400;
+            line-height: 59px;
+            letter-spacing: 0em;
+            text-align: center;
         }
     
         p{
             color: $color-secondary;
             max-width: 550px;
-            font-style: normal;
-            font-weight: 400;
+
             font-size: 14px;
-            line-height: 20px; 
-            text-align: center;     
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 0em;
+            text-align: center;            
+        }
+        .upper_text{
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            letter-spacing: 2px;
+            text-align: center;
+            text-transform: uppercase;
         }
     }
 
     .photo_info{
-        margin: 20px;
+        margin: 40px;
+
+        @media screen and (max-width: 332px) {
+            align-self: center !important;
+        }
 
         img{
             margin-left: 20px;
