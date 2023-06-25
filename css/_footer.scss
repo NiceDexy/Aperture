@@ -1,0 +1,96 @@
+footer{
+    background-color: black;
+
+    p{
+        color: $color-secondary;
+        margin-top: 20px;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-top: 5px;
+        }
+    }
+
+    h5{
+        color: $color-secondary;
+        font-style: normal;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    h4{
+        color: white;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+
+    hr{
+        color: white;
+        border: 2px solid white;
+    }
+
+    ul{
+        padding: 0;
+    }
+
+    li{
+        list-style: none;
+        margin-top: 10px;
+        
+
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-top: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 20px;
+            /* identical to box height, or 143% */
+
+            &:hover{
+                color: white;
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+
+    .icon_img{
+        margin-left: 10px;
+        margin-right: 10px;
+        min-width: 24px;
+        max-height: 24px;
+
+        @media screen and (max-width: $breakpoint-sm) {
+            margin-bottom: 10px;
+        }
+    }
+
+    #GET-email{
+        border-radius: 8px;
+        height: 52px;
+        width: 458px;
+    }
+
+    .submit{
+        z-index: 666;
+        position: absolute;
+        color: white;
+        background-color: black;
+        border-radius: 10px;
+        margin-right: 10px;
+        justify-self: end;
+    }
+}
