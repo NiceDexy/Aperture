@@ -502,6 +502,7 @@ footer #GET-email {
   border-radius: 8px;
   height: 52px;
   width: 458px;
+  max-width: 100%;
   border: none;
 }
 footer .submit {
