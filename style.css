@@ -526,12 +526,17 @@ footer .submit:hover {
     left: 75%;
   }
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 490px) {
   footer .submit {
     left: 70%;
   }
 }
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 420px) {
+  footer .submit {
+    left: 65%;
+  }
+}
+@media screen and (max-width: 320px) {
   footer .submit {
     left: 60%;
   }

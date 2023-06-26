@@ -112,11 +112,15 @@ footer{
             left: 75%;
         }
 
-        @media screen and (max-width: 470px) {
+        @media screen and (max-width: 490px) {
             left: 70%;
         }
 
-        @media screen and (max-width: 395px) {
+        @media screen and (max-width: 420px) {
+            left: 65%;
+        }
+
+        @media screen and (max-width: 320px) {
             left: 60%;
         }
     }
