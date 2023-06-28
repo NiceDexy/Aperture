@@ -374,7 +374,7 @@ main {
 }
 @media screen and (max-width: 576px) {
   .clients .text {
-    margin-top: 20px4;
+    margin-top: 20px;
   }
 }
 .clients .text h2 {
